@@ -1,9 +1,9 @@
 [
   {
     "id": "1",
-    "coverImg": "https://th.bing.com/th/id/OIP.NQnHxDtYkmql_gtu5fXhGAHaEK?w=310&h=180&c=7&r=0&o=5&pid=1.7",
-    "title": "Title 1",
-    "author": "Author 1",
+    "coverImg": "https://th.bing.com/th/id/R.3509c7c43b58926aa5fe0b6ee5f5e118?rik=9boFPv8zTlJIvQ&pid=ImgRaw&r=0",
+    "title": "Exploring the Future: The Role of AI in Cybersecurity",
+    "author": "Emily Parker",
     "authorImg": "https://th.bing.com/th/id/R.3509c7c43b58926aa5fe0b6ee5f5e118?rik=9boFPv8zTlJIvQ&pid=ImgRaw&r=0",
     "postedDate": "2023-11-19",
     "readingTime": 5,
@@ -12,8 +12,8 @@
   {
     "id": "2",
     "coverImg": "https://th.bing.com/th/id/R.15229db5941781359c3277f72bd08f52?rik=4LIG5c7%2bfmgfOw&pid=ImgRaw&r=0",
-    "title": "Title 2",
-    "author": "Author 2",
+    "title": "Demystifying Quantum Computing: A Deep Dive into Qubits",
+    "author": "Liam johnson",
     "authorImg": "https://th.bing.com/th/id/OIP.IoUmyjrf4VaXudyiVqv2WwHaII?w=187&h=205&c=7&r=0&o=5&pid=1.7",
     "postedDate": "2023-11-18",
     "readingTime": 10,
@@ -22,8 +22,8 @@
   {
     "id": "3",
     "coverImg": "https://images.hdqwalls.com/download/forest-lake-landscape-kk-1280x720.jpg",
-    "title": "Title 3",
-    "author": "Author 3",
+    "title": "The Rise of Remote Work: How Technology is Bridging the Gap",
+    "author": "Noah Davis",
     "authorImg": "https://th.bing.com/th/id/OIP.NqY3rNMnx2NXYo3KJfg43gHaHa?w=204&h=205&c=7&r=0&o=5&pid=1.7",
     "postedDate": "2023-11-17",
     "readingTime": 15,
@@ -32,8 +32,8 @@
   {
     "id": "4",
     "coverImg": "https://wallpapersmug.com/download/1280x720/2baa77/mountains-sunset-landscape-4k.jpg",
-    "title": "Title 4",
-    "author": "Author 4",
+    "title": "Blockchain Beyond Bitcoin: Real-world Applications of Distributed Ledger Technology",
+    "author": "Olivia Garcia",
     "authorImg": "https://th.bing.com/th/id/OIP.0yi26fO0azz9oRCE5I59zgHaE8?w=282&h=188&c=7&r=0&o=5&pid=1.7",
     "postedDate": "2023-11-16",
     "readingTime": 20,
@@ -42,7 +42,7 @@
   {
     "id": "5",
     "coverImg": "https://images.wallpaperscraft.com/image/single/landscape_mountains_art_140515_1280x720.jpg",
-    "title": "Title 5",
+    "title": "Navigating the Metaverse: The Next Frontier in Digital Interaction",
     "author": "Author 5",
     "authorImg": "https://randomuser.me/api/portraits/men/5.jpg",
     "postedDate": "2023-11-15",
