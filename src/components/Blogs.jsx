@@ -1,23 +1,23 @@
 import { useEffect, useState } from "react";
 import Blog from "./Blog";
 
+const Blogs = ({addBookmark, bookmarks, removeBookmark, markRead}) => {
+  const [blogs, setBlogs] = useState([]);
 
-const Blogs = () => {
-  const [blogs, setBlogs] = useState([])
+  useEffect(() => {
+    fetch("/blogs.json")
+      .then((res) => res.json())
+      .then((data) => setBlogs(data));
+  }, []);
 
-  useEffect(()=>{
-    fetch('/blogs.json')
-    .then(res => res.json())
-    .then(data => setBlogs(data))
-  },[])
+
   return (
-    <div className=" border-l-2 w-2/3">
-      <h1 className="text-center">Blogs: {blogs.length}</h1>
-      {
-        blogs.map(blog=> <Blog key={blog.id} blog={blog}/>)
-      }
-      
-    </div>
+    <section className=" w-2/3">
+     
+      {blogs.map((blog) => (
+        <Blog markRead={markRead} removeBookmark={removeBookmark} bookmarks={bookmarks} addBookmark={addBookmark} key={blog.id} blog={blog} />
+      ))}
+    </section>
   );
 };
 
