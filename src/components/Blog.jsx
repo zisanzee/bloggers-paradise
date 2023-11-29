@@ -1,6 +1,7 @@
-import Bookmarks from "./Bookmarks";
+import { useState } from "react";
 
-const Blog = ({ blog, addBookmark, bookmarks, removeBookmark, markRead }) => {
+
+const Blog = ({ blog, UnmarkRead, addBookmark, bookmarks, removeBookmark, markRead }) => {
   const getDaysAgo = (dateString) => {
     const currentDate = new Date();
 
@@ -19,7 +20,7 @@ const Blog = ({ blog, addBookmark, bookmarks, removeBookmark, markRead }) => {
     return `${formattedDate} (${differenceInDays} Days ago)`;
   };
 
-  let add = true;
+  const [canRead, setCanRead] = useState(true)
 
   return (
     <div className="py-8 border-b-2 ">
@@ -46,9 +47,9 @@ const Blog = ({ blog, addBookmark, bookmarks, removeBookmark, markRead }) => {
                 removeBookmark(blog.title)
               }
               }}
-             className=" transition-all"
+             
           >
-            <svg
+            <svg className=" transition-all"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -75,9 +76,15 @@ const Blog = ({ blog, addBookmark, bookmarks, removeBookmark, markRead }) => {
         ))}
       </div>
       <button onClick={()=>{
-        markRead(blog.readingTime)
-      }} className=" text-blue-600 underline" >
-        Mark as read
+        if (canRead){
+          markRead(blog.readingTime)
+          setCanRead(false)
+        } else {
+          UnmarkRead(blog.readingTime)
+          setCanRead(true)
+        }
+      }} className={canRead? 'text-blue-600': 'text-red-600'} >
+        {canRead? 'Mark as read': 'Unmark as read'}
       </button>
     </div>
   );
